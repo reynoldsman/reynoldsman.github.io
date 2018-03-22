@@ -1,0 +1,237 @@
+body {
+	width: 960px;
+	margin: 0 auto 100px auto;
+}
+
+h1 {
+	font-size: 30px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+h2, h3 {
+	color: #808080;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	text-align: center;
+}
+
+p, li {
+	font-family: electrolize, sans-serif;
+	list-style: square;
+	font-weight: 300;
+	font-size: 14px;
+	text-align: center;
+
+}
+
+h2 {
+	font-size: 3em;
+}
+
+footer {
+	margin-top: 40px;
+}
+
+nav {
+	margin-right: 20px;
+}
+
+.navbar h1 {
+	flex-grow: 2;
+
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 7em;
+}
+
+.navbar a {
+	padding: 5px;
+	font-family: electrolize, sans-serif;
+	color: black;
+	text-decoration: none;
+
+}
+
+.navbar a:hover {
+	color: #00AEEF;
+}
+
+.navbar span {
+	flex-grow: 2;
+}
+
+#logo {
+	align-self: flex-start;
+	font-size: 1.5em;
+	padding-left: 1em;
+	padding-top: .9em;
+}
+
+.flexcontainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#about {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+}
+
+.aboutbox {
+	width: 30%;
+	margin: 0 10px;
+}
+
+.flexbox {
+	display: flex;
+	width: 25%;
+	justify-content: flex-start;
+	align-items: center;
+	/*border: solid 1px black;*/
+	flex-direction: column;
+	padding: 20px;
+}
+
+.bar {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+}
+
+#hamburger {
+	display: none;
+	margin-right: 30px;
+}
+
+#hidenav {
+	display: none;
+}
+
+.accent {
+	
+	color: #00AEEF;
+}
+
+.smaller {
+	font-size: 14px;
+}
+
+.serviceimage {
+	height: 200px;
+	width: auto;
+}
+
+#services h2 {
+	text-align: center;
+}
+
+.banner {
+	display: flex;
+	height: 500px;
+	width: auto;
+	background-image: url("../images/blurryplasma.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding: 30px;*/
+	align-items: flex-start;
+
+}
+
+.gold {
+	color: #FFFF00;
+	font-size: 45px;
+	text-align: center;
+	font-family: electrolize, sans-serif;
+	font-weight: 500;
+	text-shadow: 2px 2px 8px black;
+}
+
+.banner h2 {
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	font-family: electrolize, sans-serif;
+	font-weight: 400;
+	padding: 170px 80px;
+}
+
+.spacer {
+	height: 500px;
+	background-image: url("../images/blurryengineer.jpg");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.customers {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+
+}
+
+.customers img {
+
+}
+
+.clients {
+	font-size: 36px;
+}
+
+#contact ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		/*background-color: lightblue;*/
+	}
+
+	.navbar a {
+		display: none;
+
+	}
+
+	#hamburger {
+		display: block;
+	}
+
+	#hidenav {
+		display: none;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+
+	}
+
+	#hidenav a {
+		font-family: electrolize, sans-serif;
+		color: black;
+		text-decoration: none;
+		height: 5em;
+	}
+
+	.flexbox {
+	width: 70%;
+	}
+
+	#services p {
+		display: none;
+	}
+
+	#services h3 {
+		font-size: 2.5em;
+	}
+
+	#services h2 {
+		font-size: 3em;
+	}
+}

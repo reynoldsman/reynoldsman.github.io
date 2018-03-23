@@ -205,12 +205,15 @@ button {
 	align-items: flex-start;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 414px) {
 	body {
 	width: 90%;
 	margin: 0 auto 10em auto;
 	}
 
+	.navbar {
+		height: 8em;
+	}
 	.navbar a {
 		display: none;
 
@@ -257,7 +260,15 @@ button {
 	}
 
 	#services h2 {
-		font-size: 3em;
+		font-size: 2em;
+	}
+
+	.banner h2 {
+		padding: 1.5em;
+	}
+
+	.spacer h2{
+		font-size: 10px;
 	}
 
 	

@@ -192,7 +192,8 @@ nav {
 
 @media screen and (max-width: 480px) {
 	body {
-		/*background-color: lightblue;*/
+	width: 90%;
+	margin: 0 auto 10em auto;
 	}
 
 	.navbar a {
